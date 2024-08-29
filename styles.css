@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 header {
@@ -20,12 +21,15 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+   
 }
 
 header img {
-    width: 350px;
+    width: 380px;
     display: block;
     margin: 0 auto;
+    margin-left: 58px;
+    margin-top: 60px;
 }
 
 .banner {
@@ -34,32 +38,50 @@ header img {
     padding: 15px;
     text-align: center;
     font-size: 1.1em;
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+    top: 0;
+    z-index: 10;
 }
-
+.banner button {
+  padding: 4px 8px;
+  background-color: #ffffff;
+  color: #06006e;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .hero {
-    text-align: center;
+    text-align: left;
     padding: 50px 20px;
     background-color: #ffffff;
-    
+    margin-top: 10px;
+    padding-top: 30px;
 
     position: relative; /* Allows positioning of the background image */
     /* Set the background image */
     background-image: url(images/herobg.svg);
     background-position: right bottom; /* Position it at the right bottom corner */
     background-repeat: no-repeat;
-    background-size: 63%;
+    background-size: 68%;
     
 }
 
 .hero h1 {
     font-size: 2.5em;
-    margin: 60px;
-    margin-bottom: 80px;
+    color: #06006e;
+    margin-left: 60px;
+    margin-top: 5px;
+    margin-bottom: 40px;
 }
 
 .hero p {
     font-size: 1em;
     margin-bottom: 250px;
+    margin-left: 60px;
+}
+.hero h2  {
+  margin-left: 60px;
+  margin-top: 10px;
 }
 
 .hero button {
@@ -70,7 +92,11 @@ header img {
     border: none;
     font-size: 1.1em;
     cursor: pointer;
+    margin-left: 60px;
+    margin-top: 0px;
     transition: background-color 0.3s ease;
+    position: relative;
+    bottom: 200px;
 }
 
 .hero button:hover {
