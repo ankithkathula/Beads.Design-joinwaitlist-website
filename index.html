@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beads.Design | Spatial Moodboarding and Product Discovery</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Beads.Design Logo">
+</header>
+
+<div class="banner">
+    Do you want to explore design in an interesting and efficient way? Join the waitlist now!
+</div>
+
+<section class="hero">
+    <h1>Unleash your creativity with instant <strong>Moodboarding</strong> and seamless <strong>Product discovery</strong>.</h1>
+    <h2>Revolutionizing Interior Design</h2>
+    <button id="joinWaitlistBtn">Join the Waitlist</button>
+    <p>We’re in development stage—be the first to know when we launch!</p>
+</section>
+
+<section class="content-section">
+    <h2>How Beads.Design Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>Explore & Inspire</h3>
+            
+            <img src="images/step1.svg" alt="">
+            <p>Start with your favorite design style or explore new ones.</p>
+        </div>
+        <div class="step">
+            <h3>Build & Visualize</h3>
+            <img src="images/step2.svg" alt="">
+            <p>Create mood boards that bring your vision to life.</p>
+        </div>
+        <div class="step">
+            <h3>Discover & Organize</h3>
+            <img id = step3 src="images/step3.svg" alt="">
+            <p>Find the perfect products that fits your idea and seamlessly integrate them into your projects.</p>
+        </div>
+        <div class="step">
+            <h3>Execute & Succeed</h3>
+            <img src="images/step4.svg" alt="">
+            <p>Turn your designs into reality with our streamlined project management tools.</p>
+        </div>
+        
+    </div>
+    <button id="joinWaitlistBtn">Join the Waitlist</button>
+</section>
+<!--
+<section class="cta-section">
+    <h2>What Designers Are Saying</h2>
+    <p>We’re developing Beads.Design with input from top designers. Hear what they’re saying about the future of interior design.</p>
+    <button id="joinWaitlistBtn2">Join the Waitlist</button>
+    <p>Get notified when Beads.Design is ready for you!</p>
+</section>
+-->
+<footer class="footer">
+    <p>Beads.Design</p>
+    <!--<p>© 2024 Beads.Design. All rights reserved.</p>
+    <p>
+        <a href="#">Instagram</a> | 
+        <a href="#">LinkedIn</a> | 
+        <a href="#">Twitter</a>
+    </p>-->
+    <p>Have questions? Reach out to us at <a href="mailto:contact.beads.design@gmail.com">contact.beads.design@gmail.com</a></p>
+    <p>Don’t miss out—<a href="#" id="joinWaitlistBtn3">Join the Waitlist today!</a></p>
+</footer>
+
+<!-- Modal -->
+<div id="waitlistModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJkYs9Gw6lqDJ7d_orS8CeIDrWKQrW79g7fAKfVnA5xJVAvQ/viewform?embedded=true"></iframe>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("waitlistModal");
+
+    var btns = document.querySelectorAll("#joinWaitlistBtn, #joinWaitlistBtn2, #joinWaitlistBtn3");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btns.forEach(function(btn) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+    });
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>
